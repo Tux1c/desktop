@@ -3,6 +3,7 @@ My Desktop
 **Info**  
 Distro - Gentoo Linux.  
 WM - DWM  
+  
 **Packages**  
 Terminal Emulator - rxvt-unicode  
 File browser - ranger  
