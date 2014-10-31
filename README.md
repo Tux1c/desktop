@@ -13,7 +13,7 @@ Music player - mpd && ncmpcpp
 Font - Terminus  
 GTK theme - Numix  
   
-**Firefox addons**
+**Firefox addons**  
 Disconnect  
 DownThemAll  
 Enhanced Steam  
