@@ -1,1 +1,16 @@
-/home/yan/.autostart
+#!/bin/bash
+firefox-bin &
+urxvt -e htop &
+urxvt -e ncmpcpp &
+urxvt -e ranger &
+urxvt &
+
+sleep 10
+xdotool search --name "yan" set_window --name "Terminal"
+xdotool search --name "htop" windowsize 466 110
+xdotool search --name "htop" windowmove 1174 48
+xdotool search --name "-" windowmove 1174 193
+xdotool search --name "ranger" windowmove 1174 479
+xdotool search --name "Terminal" windowmove 1174 765
+xdotool search --name "Mozilla Firefox" windowsize 1100 968
+xdotool search --name "Mozilla Firefox" windowmove 34 48
