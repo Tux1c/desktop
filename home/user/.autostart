@@ -5,12 +5,52 @@ urxvt -e ncmpcpp &
 urxvt -e ranger &
 urxvt &
 
-sleep 10
-xdotool search --name "yan" set_window --name "Terminal"
+# Moves and resizes the htop window
+while [[ "$(xdotool search --name "htop")" -eq "" ]]; do
+:
+done
+#sleep 0.5 
 xdotool search --name "htop" windowsize 466 110
 xdotool search --name "htop" windowmove 1174 48
-xdotool search --name "-" windowmove 1174 193
+
+# Moves the ncmpcpp window
+while [[ "$(xdotool search --name "ncmpcpp")" -eq "" ]]; do
+:
+done
+#sleep 0.5 
+xdotool search --name "ncmpcpp" windowmove 1174 193
+
+# Moves the ranger window
+while [[ "$(xdotool search --name "ranger")" -eq "" ]]; do
+:
+done
+#sleep 0.5 
 xdotool search --name "ranger" windowmove 1174 479
-xdotool search --name "Terminal" windowmove 1174 765
+
+# Moves the terminal window
+while [[ "$(xdotool search --name "yan@")" -eq "" ]]; do
+:
+done
+#sleep 0.5 
+xdotool search --name "yan@" windowmove 1174 765
+
+# Moves and resizes the firefox window
+while [[ "$(xdotool search --name "Mozilla Firefox")" -eq "" ]]; do
+:
+done
+sleep 0.5
 xdotool search --name "Mozilla Firefox" windowsize 1100 968
 xdotool search --name "Mozilla Firefox" windowmove 34 48
+
+skype &
+steam &
+teamspeak3 &
+feh /home/yan/Pictures/status.png &
+
+# Moves and resizes the skype window
+while [[ "$(xdotool search --name "gummygum173")" -eq "" ]]; do
+:
+done
+#sleep 0.5
+xdotool search --name "Skype" windowsize 271 1036
+xdotool search --name "Skype" windowmove 0 14
