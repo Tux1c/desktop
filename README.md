@@ -28,4 +28,4 @@ Stylish
 Youtube All HTML5  
   
 **Stylish styles**  
-https://userstyles.org/styles/102262/twily-s-powerline-firefox-css - Slightly modified.
+http://pastebin.com/3DQLFzJc - Slightly modified twilly's CSS for Firefox.
