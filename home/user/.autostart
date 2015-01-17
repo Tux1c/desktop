@@ -10,36 +10,36 @@ while [[ "$(xdotool search --name "htop")" -eq "" ]]; do
 :
 done
 #sleep 0.5 
-xdotool search --name "htop" windowsize 466 110
-xdotool search --name "htop" windowmove 1174 48
+xdotool search --name "htop" windowsize 466 110 &
+xdotool search --name "htop" windowmove 1180 48
 
 # Moves the ncmpcpp window
 while [[ "$(xdotool search --name "ncmpcpp")" -eq "" ]]; do
 :
 done
 #sleep 0.5 
-xdotool search --name "ncmpcpp" windowmove 1174 193
+xdotool search --name "ncmpcpp" windowmove 1180 200
 
 # Moves the ranger window
 while [[ "$(xdotool search --name "ranger")" -eq "" ]]; do
 :
 done
 #sleep 0.5 
-xdotool search --name "ranger" windowmove 1174 479
+xdotool search --name "ranger" windowmove 1180 486
 
 # Moves the terminal window
 while [[ "$(xdotool search --name "yan@")" -eq "" ]]; do
 :
 done
 #sleep 0.5 
-xdotool search --name "yan@" windowmove 1174 765
+xdotool search --name "yan@" windowmove 1180 772
 
 # Moves and resizes the firefox window
 while [[ "$(xdotool search --name "Mozilla Firefox")" -eq "" ]]; do
 :
 done
 sleep 0.5
-xdotool search --name "Mozilla Firefox" windowsize 1100 968
+xdotool search --name "Mozilla Firefox" windowsize 1112 968
 xdotool search --name "Mozilla Firefox" windowmove 34 48
 
 skype &

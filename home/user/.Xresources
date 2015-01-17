@@ -7,8 +7,10 @@
 #define t_fg_highlight #9D9EA2
 #define t_fg_ceiling   #FEFFFF
 
+URxvt*font: -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+
 URxvt.scrollBar: false
-URxvt.geometry: 77x19
+URxvt.geometry: 77x20
 
 URxvt.background: t_background
 URxvt.foreground: t_foreground
